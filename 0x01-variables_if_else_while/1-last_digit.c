@@ -9,7 +9,7 @@
  *  Return 0
  **/
 
-int main(void)
+char main(void)
 {
 
 	char ch;
