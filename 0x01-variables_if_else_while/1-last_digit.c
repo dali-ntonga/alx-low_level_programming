@@ -9,21 +9,34 @@
  *  Return 0
  **/
 
-char main(void)
+int main(int)
 {
 
-	char ch;
+	int n;
 
-		for (ch = 'a' ; ch <= 'z' ; ch++)
+	srand(time(0));
+
+	n = rand() - RAND_MAX / 2;
+
+	char last[] = "Last digit of";
+
+	printf("%s %d is %d and is ", last, n, n % 10);
+
+		if (n % 10 > 5)
 
 	{
 
-			putchar(ch);
+			printf("greater than 5\n");
 
 	}
-
-			putchar('\n');
-
+		else if (n % 10 == 0)
+	{
+			printf("0\n");
+	}
+		else
+	{
+			printf("less than 6 and not 0\n");
+	}
 	return (0);
 
 }
