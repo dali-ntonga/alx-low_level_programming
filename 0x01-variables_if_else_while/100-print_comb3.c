@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (b = 1 ; b <= 9 ; b++)
 		{
-			if (b < a)
+			if (b > a)
 			{
 				putchar (a + '0');
 				putchar (b + '0');
