@@ -5,7 +5,7 @@
  * Return: always 0
  **/
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int hours = 0;
 	int min = 0;
@@ -22,7 +22,7 @@ void jack_bauer(void);
 		_putchar (':');
 		_putchar (minutes / 10 + '0');
 		minutes++;
-		_putchar ('\-n');
+		_putchar ('\n');
 		}
 		hours++;
 		minutes = 0;
