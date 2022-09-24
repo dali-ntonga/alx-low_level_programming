@@ -2,32 +2,34 @@
 
 /**
  * jack_bauer - Prints the time
- * _putchar - Prints characters 
  * Return: always 0
  **/
 
 void jack_bauer(void)
-int _putchar(char);
 {
-	int hours = 0;
-	int minutes = 0;
-	int hours_remainder;
-	int minutes_remainder;
+	int i, j;
 
-	while (hours <= 23)
+	for (i = 0; i < 24; i++)
 	{
-		while (minutes <= 59)
+		for (j = 0; j < 60; j++)
 		{
-		hours_remainder = hours % 10;
-		_putchar (hours / 10 + '0');
-		_putchar (hours_remainder + '0');
-		_putchar (':');
-		_putchar (minutes / 10 + '0');
-		_putchar (minutes_remainder + '0');
-		minutes++;
+		if (i < 10)
+		{
+			_putchar ('0');
+			_putchar (i + '0');
+		}
+		else if (i >= 10)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+		}
+		if (j < 10)
+		{
+			_putchar(':');
+			_putchar('0');
+			_putchar((j % 10) + '0');
+		}
 		_putchar('\n');
 		}
-		hours++;
-		minutes = 0;
 	}
 }
