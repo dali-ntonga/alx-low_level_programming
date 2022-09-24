@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * jack_bauer- prints the time
+ * jack_bauer - Prints the time
+ * _putchar - Prints characters 
  * Return: always 0
  **/
 
 void jack_bauer(void)
+int _putchar(char);
 {
 	int hours = 0;
 	int minutes = 0;
@@ -29,4 +31,3 @@ void jack_bauer(void)
 		minutes = 0;
 	}
 }
-
