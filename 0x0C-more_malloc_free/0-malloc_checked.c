@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * malloc_checked -> checks memory allocated in an array 
- * @b: size of memory 
- * Return: Void 
+ * malloc_checked -> checks memory allocated in an array
+ * @b: size of memory
+ * Return: Void
  **/
 
 void *malloc_checked(unsigned int b)
